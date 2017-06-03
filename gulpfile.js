@@ -23,3 +23,9 @@ gulp.task('uglify', () => {
 });
 
 gulp.task('default', ['minify-html', 'minify-css', 'uglify']);
+
+gulp.task('watch', () => {
+	gulp.watch('public/css/*.css', ['minify-css']);
+	gulp.watch('public/js/*.js',['uglify']);
+	gulp.watch('public/index.html',['minify-html']);
+});

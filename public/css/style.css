@@ -2,8 +2,10 @@
 	box-sizing: border-box;
 }
 
-html {
+html,
+body {
 	background: #fff;
+	overflow-x: hidden;
 }
 
 body {
@@ -12,7 +14,6 @@ body {
 	position: relative;
 	min-height: 100vh;
 	max-width: 100%;
-	overflow-x: hidden;
 	font-family: 'Lato', sans-serif;
 }
 

@@ -9,8 +9,17 @@ function Server(port = process.env.PORT || 3003) {
 	this._app.use('/', express.static('./build/public'));
 	
 	this._app.get('/', (req, res) => {
-		res.render('layout');
+		res.render('index');
 	});
+
+	this._app.get('/tree', (req, res) => {
+		res.render('family');
+	});
+
+	this._app.get('/album', (req, res) => {
+		res.render('album');
+	});
+
 
 	// View engine setup
 	this._app.set('views', path.join(__dirname, '..', 'views'));

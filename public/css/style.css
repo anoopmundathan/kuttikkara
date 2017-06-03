@@ -52,8 +52,10 @@ li:hover {
 }
 
 a {
+	display: block;
 	text-decoration: none;
 	color: inherit;
+	min-height: 30px;
 }
 
 .header-hamburger-icon {

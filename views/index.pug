@@ -1,0 +1,20 @@
+extends layout
+block content
+    #main-container   
+      header
+        .header-hamburger-icon
+          svg#hamburger(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 24 24')
+            path(d='M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z')
+      main
+        .main-content
+          .main-header
+            h1 Welcome!
+          .main-history
+            h2 Family - History
+          .main-description
+            p
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+      footer.main-footer
+        span &copy;2017 Kuttikkara Family
+    script(src='js/app.js')

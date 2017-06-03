@@ -1,0 +1,21 @@
+{
+  "name": "kuttikkara",
+  "version": "1.0.0",
+  "description": "Kuttikkara Family Tree App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./server/index.js"
+  },
+  "engines" : {
+    "node": "v7.0.0"
+  },
+  "keywords": [
+    "kuttikkara"
+  ],
+  "author": "Anoop Mundathan <anoop.mundathan@gmail.com> (http://anoopmundathan.me/)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.15.3"
+  }
+}

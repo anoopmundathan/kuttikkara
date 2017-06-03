@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background: #fff;
+}
+
+body {
+	min-height: 100vh;
+	position: relative;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+header {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background: skyblue;
+	min-height: 75px;
+}
+
+ul {
+	width: 100%;
+	list-style: none;
+	position: absolute;
+	padding: 5px;
+	top: 50px;
+}
+
+li {
+	margin: 0;
+	padding: 15px;
+	color: #566270;
+	list-style: none;
+	border-bottom: solid 1px #e0e3da;
+}
+
+.slidemenu {
+	position: absolute;
+	top: 0;
+	width: 250px;
+	height: 100%;
+	background: #f4f4f4;
+	transform: translate(-200%,0);
+	transition: all .3s ease;
+	box-shadow: 1px 0px 5px #888888;
+	cursor: pointer;
+}
+
+main {
+	width: 80%;
+	margin: auto;
+}
+
+.slidemenu-header {
+	background: lightblue;
+}
+
+#main-container {
+	transition: all .3s ease;
+}
+.header-hamburger-icon {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 301px) {
+}

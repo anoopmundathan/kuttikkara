@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		 <meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		 <meta http-equiv="x-ua-compatible" content="ie=edge">
+		 <title>Kuttikkara</title>
+		 <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="slidemenu">
+				<div class="slidemenu-header">
+					<h1>Kuttikkara</h1>
+				</div>
+				<div class="slidemenu-list">
+					<ul>
+						<li>Home</li>
+						<li>Family-Tree</li>
+						<li>Album</li>
+					</ul>
+				</div>
+		</div> 	<!-- End Slide Menu -->
+		
+		<div id="main-container">
+			<header>
+				<div class="header-hamburger-icon">
+					<svg id="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+		                <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+	            	</svg>
+				</div>
+			</header>
+			<main>
+				<div class="main-content">
+					<h2>Welcome!</h2>
+					<p>Kuttikkara Family - History</p>
+					<p>Askhf sdlfjsdl fjlsd fls kdsksdfh fkdsh kdsfhk dfshdshk sfdhdsfksfh dkfhdsfsdkf ds
+					sdkf dsfhldsfhldsf ldsfhlsdfhflsdhfldas fsadfkldsfhlsdfhsad 
+					sdkfhdksfhds fldsfldshfldsfldslfdlsflds dflsfsdsduf idsfhdsfhkdsjhfksd hflksdafl dsfhldshflds f jdshlkf dlsfdls fdlsfhlsd fhls sald jfdlasdfjlasdlsfdlsfdlsfadlsflfadlfasdlfdsfdlsflsflsdfdlskfhsdl flsdhflsdfhlsdhflldalsf lsdflh dls f </p>
+				</div>
+			</main>
+			<footer class="main-footer">
+			</footer>
+		</div>
+
+		<script type="text/javascript">
+			(function() {
+				var hamburger = document.querySelector('.header-hamburger-icon');
+				var slideMenu = document.querySelector('.slidemenu');
+				var container = document.querySelector('#main-container');
+		
+				var toggle = false;
+				hamburger.addEventListener('click', function() {
+					toggle = !toggle;
+					if (toggle) {
+						slideMenu.style.transform = ("translate(0,0)");
+						container.style.transform = ("translate(250px, 0)");
+					} else {
+						slideMenu.style.transform = ("translate(-200%,0)");
+						container.style.transform = ("translate(0, 0)");
+					}
+				});
+			})();
+		</script>
+	</body>
+</html>

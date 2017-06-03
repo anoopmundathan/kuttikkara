@@ -1,16 +1,17 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html,
 body {
+	top: 0;
 	background: #fff;
 	overflow-x: hidden;
 }
 
 body {
-	margin: 0;
-	padding: 0;
 	position: relative;
 	min-height: 100vh;
 	max-width: 100%;
@@ -18,24 +19,21 @@ body {
 }
 
 header {
-	margin: 0;
-	padding: 0;
 	position: relative;
-	background: skyblue;
+	background: #AAABD3;
 	min-height: 75px;
+	z-index: 1;
 }
 
 main {
-	width: 80%;
+	width: 50%;
 	margin: auto;
 }
 
 ul {
 	width: 100%;
 	list-style: none;
-	position: absolute;
 	padding: 5px;
-	top: 50px;
 }
 
 li {
@@ -44,6 +42,25 @@ li {
 	color: #566270;
 	list-style: none;
 	border-bottom: solid 1px #e0e3da;
+	transition: all .3s ease;
+}
+
+li:hover {
+	background: #dee1e8;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.header-hamburger-icon {
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
 }
 
 .slidemenu {
@@ -56,22 +73,46 @@ li {
 	transition: all .3s ease;
 	box-shadow: 1px 0px 5px #888888;
 	cursor: pointer;
+	z-index: 5;
+	overflow: hidden;
 }
 
-.slidemenu-header {
-	background: lightblue;
+.slidemenu-header-container {
+	width: 100%;
+	min-height: 75px;
+	background: #AAABD3;
+	overflow: hidden;
+}
+
+.slidemenu-header{
+	width: 90%;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.slidemenu-header h1 {
+	padding-left: 5px;
+}
+
+.slidemenu-list-container {
+	width: 100%;
+	height: 100%;
 }
 
 #main-container {
 	transition: all .3s ease;
 }
-.header-hamburger-icon {
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: 15px;
-	left: 10px;
-	width: 45px;
-	height: 45px;
-	cursor: pointer;
+
+.main-header {
+	margin: 30px 0;
+	text-align: center;
+}
+
+.main-history {
+	margin: 30px 0;
+}
+
+.main-description {
+	line-height: 1.5em;
 }

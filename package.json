@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "gulp",
     "start": "node ./server/index.js"
   },
-  "engines" : {
+  "engines": {
     "node": "v7.0.0"
   },
   "keywords": [
@@ -17,5 +18,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "4.15.3"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-cssmin": "0.2.0",
+    "gulp-htmlmin": "3.0.0",
+    "gulp-uglify": "3.0.0"
   }
 }

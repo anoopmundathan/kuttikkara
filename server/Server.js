@@ -4,7 +4,8 @@ const express = require('express');
 function Server(port = process.env.PORT || 3003) {
 	this._app = express();
 	this._port = port;
-	this._app.use('/', express.static('./public'));
+
+	this._app.use('/', express.static('./build/public'));
 }
 
 Server.prototype.listen = function() {

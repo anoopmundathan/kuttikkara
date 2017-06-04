@@ -20,6 +20,7 @@ var Kuttikara = (function() {
 			}
 		});	
 	}
+
 	return {
 		animateMenu: animateMenu
 	}

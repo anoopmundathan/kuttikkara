@@ -1,13 +1,44 @@
-var arr = [10, 5, 7, 12, 23, 2, 34, 32, 29, 21, 45, 50, 60, 12, 23, 12, 4,23,10, 5, 34, 22, 43];
-d3.select('.main-description')
-	.selectAll('div')
-	.data(arr)
+var tree = [
+	{
+		name: "Raman",
+		age: 50
+	},
+	{
+		name: "Seetha",
+		age: 40
+	},
+	{
+		name: "Lavan",
+		age: 9
+	},
+	{
+		name: "Kusan",
+		age: 10
+	},
+	
+
+];
+var svg = d3.select('.main-description')
+			.append('svg')
+			.attr('width', 500)
+			.attr('height', 500);
+// data binding
+svg.selectAll('circle')
+	.data(tree)
 	.enter()
-	.append('div')
-	.attr('class', 'chart')
-	.style('height', function(r) {
-		return r * 8;
+	.append('circle')
+	.attr('cx', function() {
+		var x = Math.floor(Math.random() * 500);
+		return x;
 	})
-	.style('background', function(r) {
-		return '#' + Math.random().toString(16).slice(-6);
-	});
+	.attr('cy', function() {
+		var y = Math.floor(Math.random() * 500);
+		return y;
+	})
+	.attr('r', function(d) {
+		return d.age * 8;
+	})
+	.attr('fill', function() {
+		var color = '#' + Math.random().toString(16).slice(-6);
+		return color;
+	})
